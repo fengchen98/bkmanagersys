@@ -46,6 +46,7 @@ public class ActivityCheckListController {
             activityCheckListService.update(updateWrapper);
             Activity activity = new Activity();
             BeanUtils.copyProperties(activityCheckList, activity);
+            //System.out.println("ssss");
 //            Activity activity = JSONObject.parseObject(activityCheckList.toString(), Activity.class);
             activityService.save(activity);
         }
